@@ -1,0 +1,91 @@
+ /*----------------------------------------
+ Stylesheet for Timepicker control
+ Author: Andy Chapman
+ Email: andy@simb.com.au
+ Author website: http://www.simb.com.au  
+ ----------------------------------------*/ 
+
+#timepicker
+{
+	background: #f7f7f7;
+	width: 320px;
+	height: 500px;
+	padding: 10px;
+	color: #4d4d4d; 
+	overflow: hidden;
+	border: 2px solid #333333;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 20px;
+}
+ 
+#timepicker ul
+{
+	float: left;
+	margin: 0px 0px 0px 15px;
+	width: 85px;
+	padding: 0px; 
+}
+
+	#timepicker ul:first-child
+	{
+		margin: 0px 0px 0px 0px !important;
+	}
+	
+		#timepicker ul li
+		{
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+			margin-bottom: 1px;
+		}
+		
+			#timepicker ul li a
+			{
+				display: block;
+				text-decoration: none;
+				padding: 5px;
+				text-align: center;
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(50%,#F7F7F7), color-stop(51%,#EDEFF3), color-stop(100%,#EDEFF3));
+				background: -webkit-linear-gradient(top, white 0%,#F7F7F7 50%,#EDEFF3 51%,#EDEFF3 100%);
+				background: linear-gradient(top, white 0%,#F7F7F7 50%,#EDEFF3 51%,#EDEFF3 100%);
+				font-family: arial;
+				font-size: 17px;
+				color: #000000;
+				border: 1px solid #242424;
+			}
+			
+			#timepicker ul li a.selected
+			{
+				background: #bfe7ec;
+				border: 1px solid #242424;
+				color: #000000;
+			}
+			
+#timepickerSelect
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 70px;
+}
+
+#timepickerCancel 
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 70px;
+}
+
+#timepicker form
+{
+	clear: both;
+}
+
+#timepicker form a
+{
+	float: left;
+	margin: 10px 17px 0px 0px;
+}

@@ -1,0 +1,32 @@
+.toggleControl
+{
+	display: block;
+	padding: 10px;
+	width: 120px;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(50%,#F7F7F7), color-stop(51%,#EDEFF3), color-stop(100%,#EDEFF3));
+	background: -webkit-linear-gradient(top, white 0%,#F7F7F7 50%,#EDEFF3 51%,#EDEFF3 100%);
+	background: linear-gradient(top, white 0%,#F7F7F7 50%,#EDEFF3 51%,#EDEFF3 100%);
+	font-family: arial;
+	font-size: 17px;
+	color: #000000;
+	border: 1px solid #242424;
+	margin-right: 10px;
+	float: left;
+	border-radius: 6px;	
+	-webkit-border-radius: 6px;
+}
+
+	.toggleControl.toggleActive
+	{
+	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ec5cc), color-stop(0%,#7ec5cc), color-stop(50%,#00a4b5), color-stop(51%,#0094a3), color-stop(100%,#00a0b2)); /* Chrome,Safari4+ */
+	    background: -webkit-linear-gradient(top, #7ec5cc 0%,#7ec5cc 0%,#00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* Chrome10+,Safari5.1+ */
+	    background: linear-gradient(top, #7ec5cc 0%,#7ec5cc 0%,#00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* W3C */	
+	    color: white;	
+	    font-weight: bold;
+	}
+
+	.toggleControl:hover
+	{
+		cursor: pointer;
+	}

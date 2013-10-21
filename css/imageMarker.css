@@ -1,0 +1,135 @@
+#imageMarker
+{
+	position: absolute; top: 5px; left: 5px;
+	z-index: 99999;
+	background-color: #F4F4F4;
+	padding: 0 10px 10px 10px;
+	-webkit-border-radius: 10px; border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(38, 38, 38, 0.5); box-shadow: 0px 5px 20px 0px rgba(38, 38, 38, 0.5); 
+}
+
+#imageMarker h1
+{
+    background: #006e79;
+    -webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-family: 'PTSansBoldItalic';
+    height: auto;
+    line-height: 1em;
+    margin: 0 0 0 -10px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #002c30;
+    width: 100%;
+}
+
+#imageMarker .imColLeft
+{
+    float: left;
+}
+
+#imageMarker .imColLeft canvas
+{
+    border: 10px solid #fff;
+    -webkit-border-radius: 10px; border-radius: 10px;    
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(227, 245, 139, .8); box-shadow: inset 0px 0px 15px 0px rgba(227, 245, 139, .8);  
+    margin: 15px 0 5px;
+}
+
+    #imageMarker ul#colorControls
+    {
+        list-style-type: none;
+    }
+    
+        #imageMarker ul#colorControls li
+        {
+            float: left;
+            margin-right: 20px;
+        }
+        
+            #imageMarker ul#colorControls li a
+            {
+                border: 2px solid;
+                border-radius: 10px;  
+                color: #262626;                
+                display: block;
+                    width: 90px;
+                font-family: 'PTSansBold', sans-serif;
+                font-weight: normal;
+                opacity: 0.5;
+                padding: 25px 0;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: 1px 1px 2px #fbfbfb;
+                text-transform: uppercase;
+            }
+            
+            #imageMarker ul#colorControls li a.colorRed
+            {
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#df4b26), color-stop(100%,#be4020)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #df4b26 0%, #be4020 100%); /* Chrome10+,Safari5.1+ */
+                background: linear-gradient(top, #df4b26 0%, #be4020 100%); /* W3C */
+                border-top-color: #e46646;   
+                border-bottom-color: #97331a;   
+                border-left-color: #d44724;   
+                border-right-color: #d44724;  
+                color: #fff;
+                text-shadow: 0px 1px 0 #262626; 
+            }
+            
+            #imageMarker ul#colorControls li a.colorYellow
+            {
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff26), color-stop(100%,#d9d900)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #ffff26 0%, #d9d900 100%); /* Chrome10+,Safari5.1+ */
+                background: linear-gradient(top, #ffff26 0%, #d9d900 100%); /* W3C */
+                border-top-color: #ffff66;   
+                border-bottom-color: #cdcd00;   
+                border-left-color: #ebeb00;   
+                border-right-color: #ebeb00;  
+            }	
+            
+            #imageMarker ul#colorControls li a.colorGreen
+            {
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46ff46), color-stop(100%,#00d900)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #46ff46 0%, #00d900 100%); /* Chrome10+,Safari5.1+ */
+                background: linear-gradient(top, #46ff46 0%, #00d900 100%); /* W3C */
+                border-top-color: #26ff26;   
+                border-bottom-color: #00af00;   
+                border-left-color: #00eb00;   
+                border-right-color: #00eb00;  
+            }  
+            
+            #imageMarker ul#colorControls li a.selected
+            {               
+                opacity: 1;   
+            }                          
+            
+#imageMarker .imColRight
+{
+    float: right;
+    margin-right: 10px;
+} 
+
+#imageMarker .imColRight h2
+{
+    display: block;
+    margin: 10px 0;
+} 
+
+#imageMarker .imColRight #imNotes
+{
+    background: #fff;
+    font-family: 'PTSansRegular', sans-serif;
+}    
+
+#frmIMControls
+{
+    bottom: 10px;
+}
+
+#imageMarker #frmIMControls a
+{
+    float: left;
+    margin: 0 10px 0 0;
+    width: 88px;     
+}      

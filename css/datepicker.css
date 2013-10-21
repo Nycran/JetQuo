@@ -1,0 +1,127 @@
+ /*----------------------------------------
+ Stylesheet for Datepicker control
+ Author: Andy Chapman
+ Email: andy@simb.com.au
+ Author website: http://www.simb.com.au  
+ ----------------------------------------*/ 
+
+#datepicker
+{
+	width: 305px;
+	height: 318px;
+	padding: 5px;
+	background: #333333;
+	overflow: hidden;
+	border: 2px solid #CCCCCC;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-family: arial;
+	color: #FFFFFF;		
+	font-weight: bold;
+	z-index: 99;
+}
+
+#datepickerMonthYear span
+{
+	display: inline-block;
+	width: 135px;
+	text-align: center;
+}
+
+#datepicker table th
+{
+	padding: 4px;
+	width: 35px;
+}
+
+#datepicker table td a
+{
+	padding: 5px; 
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	background: -moz-linear-gradient(top, #F5F5F5 0%, #BDBDBD 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F5F5F5), color-stop(100%,#BDBDBD)); /* webkit */
+	font-family: arial;
+	font-size: 17px;
+	color: #000000;
+	border: 1px solid #242424;	
+}
+
+	#datepicker table td a.disabled
+	{
+		background: #666666;	
+	}
+	
+	#datepicker table td a.selected
+	{
+        background: -moz-linear-gradient(top, #448cdd 0%, #0766d2 50%, #0046bf 100%); /* firefox */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#448cdd), color-stop(50%,#0766d2), color-stop(100%,#0046bf)); /* webkit */	
+        border-color: #0046bf;
+        color: #fff; 
+	}	
+
+#datepickerCancel
+{
+	margin-top: 5px;
+	float: left;
+}
+
+#datepickerSelect
+{
+	margin-top: 5px;
+	float: right;
+}
+
+#datepicker input
+{
+	width: 80px;
+	height: 30px;
+}
+ 
+#timepicker ul
+{
+	float: left;
+	margin: 0px 0px 0px 15px;
+	width: 85px;
+	padding: 0px; 
+}
+
+	#timepicker ul:first-child
+	{
+		margin: 0px 0px 0px 0px !important;
+	}
+	
+		#timepicker ul li
+		{
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+			margin-bottom: 1px;
+		}
+		
+			#timepicker ul li a
+			{
+				display: block;
+				text-decoration: none;
+				padding: 2px;
+				text-align: center;
+		        background: -moz-linear-gradient(top, #F5F5F5 0%, #BDBDBD 100%); /* firefox */
+		        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F5F5F5), color-stop(100%,#BDBDBD)); /* webkit */
+				font-family: arial;
+				font-size: 17px;
+				color: #000000;
+				border: 1px solid #242424;
+			}
+			
+			#timepicker ul li a.selected
+			{
+        		background: -moz-linear-gradient(top, #448cdd 0%, #0766d2 50%, #0046bf 100%); /* firefox */
+        		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#448cdd), color-stop(50%,#0766d2), color-stop(100%,#0046bf)); /* webkit */	
+        		border-color: #0046bf;
+        		color: #fff; 
+			}
+			
+

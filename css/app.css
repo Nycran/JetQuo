@@ -1,0 +1,628 @@
+.hidden
+{
+	display: none !important;
+}
+
+.block
+{
+	display: block;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.left
+{
+	float: left;
+}
+
+.leftmargin
+{
+	margin-left: 20px;
+}
+
+.leftmarginsm
+{
+    margin-left: 10px !important;
+}
+
+.rightmargin
+{
+	margin-right: 25px !important;
+}
+
+.topspace
+{
+	margin-top: 3px;
+}
+
+.divider
+{
+    background: url('../images/divider.png') bottom left repeat-x;
+    margin: 5px 0;
+    height: 3px;    
+}
+
+span.required
+{
+    color: red;    
+    font-weight: bold;
+}
+
+#main
+{
+    margin-bottom: 20px;
+    height: 768px;
+    padding: 0px; 
+    position: relative;
+}
+
+#main h1, #create_user_screen h1
+{
+	margin: 0 !important;
+}
+
+#content > div
+{
+	padding: 20px;
+}
+
+input.error
+{
+	border: 1px solid red !important;
+}
+
+label.error
+{
+	display: none !important;
+}
+
+/* TABS */
+ul.tabs
+{
+	border-bottom: 2px solid #bdd63e;
+    list-style-type: none;
+    overflow: auto;
+}
+
+	ul.tabs li
+	{
+		float: left;
+		margin-left: 2px;
+	}
+	
+	ul.tabs li:first-child
+	{
+		margin-left: 0px;
+	}
+	
+		ul.tabs li a
+		{
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#656667), color-stop(100%,#343434)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #656667 0%, #343434 100%); /* Chrome10+,Safari5.1+ */
+            background: linear-gradient(top, #656667 0%, #343434 100%); /* W3C */
+            -webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0;            
+            color: #fff;
+            font-family: 'PTSansBold', sans-serif;            
+            display: block;
+            padding: 10px;            
+			text-decoration: none;
+			text-shadow: 0px -1px 0px #000;                                   
+		}
+		
+		ul.tabs li.active a
+		{
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6ed63), color-stop(100%,#bdd63e)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #d6ed63 0%, #bdd63e 100%); /* Chrome10+,Safari5.1+ */
+            background: linear-gradient(top, #d6ed63 0%, #bdd63e 100%); /* W3C */  
+            color: #343434; 
+            text-shadow: #e9f6a8 0px 1px 0;      
+		}
+		
+	div.tab
+	{
+		clear: both;
+		padding-top: 20px;
+		display: none;
+	}
+	
+/* ACTIONS */
+#actions
+{
+	margin-bottom: 30px;	
+}
+
+#actions ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	background: none;	
+	margin-top: 10px;	
+}
+
+	#actions ul li
+	{
+		margin: 0 10px 0 0;
+		padding: 0;
+		float: left;
+		background: none;		
+	}
+
+/* FILTERS */
+form.search
+{
+    position: absolute;
+    top: 50px;
+    left: 20px;    
+}
+
+#frmFilters
+{
+	position: absolute;
+	width: 280px;
+}
+
+#frmFilters .filterWrapper
+{
+	clear: both;
+	display: block;
+}
+
+#frmFilters ul.selector
+{
+	position: static;
+}
+
+#frmFilters label
+{
+	display: block;
+	clear: both;
+}
+
+#frmFilters .filterWrapper
+{
+	margin-top: 10px;
+}
+
+#frmFilters input[type="submit"]
+{
+	width: 270px;
+	margin-top: 20px;
+}
+
+#frmFilters input[type="text"]
+{
+	width: 250px;
+	margin: 0px;
+}
+
+#frmFilters input[type="text"].short
+{
+	width: 135px;
+	float: left;
+}
+
+#frmFilters .pick
+{
+	float: left;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+/* Inspection Listing */
+.scrollWrapper
+{
+	overflow-y: auto;
+	height: 560px;
+	padding: 0px;
+	/*width: 660px;*/
+}
+
+#tblInspectionListingHeader th
+{
+	cursor: pointer;
+}
+
+#tblInspectionListingHeader th, #tblInspectionListing td
+{
+    border-collapse: collapse;
+    margin: 0;
+    padding: 5px;
+} 
+
+#tblInspectionListingHeader th:nth-child(1), #tblInspectionListing td:nth-child(1)
+{
+	width: 130px;
+}   
+
+#tblInspectionListingHeader th:nth-child(2), #tblInspectionListing td:nth-child(2)
+{
+	width: 166px;
+}    
+
+#tblInspectionListingHeader th:nth-child(3), #tblInspectionListing td:nth-child(3)
+{
+	width: 176px;
+}
+
+#tblInspectionListingHeader th:nth-child(4), #tblInspectionListing td:nth-child(4)
+{
+    width: 50px;
+}                                          
+
+#tblInspectionListingHeader th:nth-child(5), #tblInspectionListing td:nth-child(5)
+{
+	width: 49px;
+}                                          
+
+#tblInspectionListingHeader
+{
+	width: 635px;	
+}
+
+#tblInspectionListing
+{
+	width: 635px;
+	margin: 0px;
+}
+
+#tblInspectionListing td
+{
+    height: 45px;
+    vertical-align: middle;
+}
+
+/* Inspection Details */
+#inspection #toggles
+{
+	padding: 10px 0 0 73px;
+}
+
+/* ******************* Defect Listing **********************/
+/***********************************************************/
+#defectScrollWrapper
+{
+	height: 260px;
+}
+
+#tblDefectListingHeader
+{
+	width: 635px;	
+	margin-top: 10px;
+}
+
+#tblDefectListing
+{
+	width: 635px;
+	margin: 0px;
+}
+
+#tblDefectListingHeader th:nth-child(1), #tblDefectListing td:nth-child(1)
+{
+	width: 120px;
+}
+
+#tblDefectListingHeader th:nth-child(2), #tblDefectListing td:nth-child(2)
+{
+	width: 156px;
+}
+
+#tblDefectListingHeader th:nth-child(3), #tblDefectListing td:nth-child(3)
+{
+	width: 156px;
+}
+
+#tblDefectListingHeader th:nth-child(4), #tblDefectListing td:nth-child(4)
+{
+	width: 139px;
+}
+
+table.listing
+{
+    width: 100%;    
+}
+
+table.listing th.delete
+{
+	width: 30px !important;
+	background: none !important;
+	border: none !important;
+}
+
+table td.delete
+{
+	width: 30px !important;
+	border: none !important;
+	background: transparent url('../images/icon_delete2.png') left top no-repeat !important;	
+}
+
+/******************** Client Listing **********************/
+/***********************************************************/
+#clientList .scrollWrapper
+{
+	height: 530px;
+    width: 100%;
+}
+
+#tblClientListingHeader
+{	
+	margin-top: 10px;
+}
+
+#tblClientListing
+{
+	margin: 0px;
+}     
+
+/*
+#tblClientListingHeader th:nth-child(1), #tblClientListing td:nth-child(1)
+{
+	width: 40px !important;
+	background-color: #FFFFFF;
+	border: none !important;  
+}
+*/
+
+#tblClientListing td
+{
+	height: 45px;
+	vertical-align: middle;
+}
+
+/*
+#tblClientListing td:nth-child(1)
+{
+	background: url('../images/icon_delete2.png') left 14px no-repeat;
+}
+*/
+
+/*
+#tblClientListingHeader th:nth-child(1), #tblClientListing td:nth-child(1)
+{
+	width: 239px !important;
+}
+
+#tblClientListingHeader th:nth-child(2), #tblClientListing td:nth-child(2)
+{
+	width: 202px !important;
+}
+
+#tblClientListingHeader th:nth-child(3), #tblClientListing td:nth-child(3)
+{
+	width: 146px;
+}
+*/
+
+#clientSites
+{
+    position: relative;    
+}
+
+#clientSites #listing a
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#clientSites #listing
+{
+	display: -webkit-box;
+}
+
+
+/******************** Site Listing **********************/
+/***********************************************************/
+#siteList .scrollWrapper
+{
+	height: 530px;
+}
+
+#tblSiteListingHeader
+{
+	width: 635px;	
+	margin-top: 10px;
+}
+
+#tblSiteListing
+{
+	width: 635px;
+	margin: 0px;
+}
+
+#tblSiteListingHeader th:nth-child(1), #tblSiteListing td:nth-child(1)
+{
+	width: 120px !important;
+}
+
+#tblSiteListingHeader th:nth-child(2), #tblSiteListing td:nth-child(2)
+{
+	width: 156px !important;
+}
+
+#tblSiteListingHeader th:nth-child(3), #tblSiteListing td:nth-child(3)
+{
+	width: 156px !important;
+}
+
+#tblSiteListingHeader th:nth-child(4), #tblSiteListing td:nth-child(4)
+{
+	width: 139px;
+}
+
+/******************** Contact Listing **********************/
+/***********************************************************/
+#contactList .scrollWrapper
+{
+    height: 530px;
+    width: 100%;
+}
+
+#tblContactListingHeader
+{    
+    margin-top: 10px;
+}
+
+#tblContactListing
+{
+    margin: 0px;
+}     
+
+
+#tblContactListing td
+{
+    height: 45px;
+    vertical-align: middle;
+}
+
+
+/* DEFECT HISTORY LISTING */
+#historyWrapper #historyList
+{
+	display: -webkit-box;
+	height: 150px;
+}
+
+#historyContainer {
+    position: relative;    
+}
+
+/* FILTERS */
+.filterWrapper select
+{
+	width: 260px;
+	padding: 5px;
+}
+
+/* SORT ARROWS */
+table th
+{
+	position: relative;
+}
+
+.triangle
+{
+	width: 28px;
+	height: 21px;
+	background: url('../images/triangle2.png') right top no-repeat;
+	display: inline-block;
+}
+
+.triangle.DESC
+{
+	background: url('../images/triangle2.png') right bottom no-repeat;	
+}
+
+a.addSite
+{
+    background: url("../images/icon_plus.png") left top no-repeat;
+    display: block;
+    height: 28px;
+    width: 28px;    
+}
+
+#clientSites a.addSite
+{
+    position: absolute;
+    top: 0;
+    right: 0;  
+}
+
+.myScrollbarV {
+    position:absolute;
+    z-index:100;
+    width:8px;bottom:50px;top:80px;right:10px;
+}
+
+.myScrollbarV > div {
+    position:absolute;
+    z-index:100;
+    width:100%;
+
+    /* The following is probably what you want to customize */
+    background:rgba(0,0,0,0.5);
+    border:1px solid rgba(255,255,255,0.9);
+    -webkit-background-clip:padding-box;
+    -webkit-box-sizing:border-box;
+    -webkit-border-radius:4px;
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+.myScrollbarSmV {
+    position:absolute;
+    z-index:100;
+    width:8px;bottom:310px;top:85px;right:40px;
+}
+
+.myScrollbarSmV > div {
+    position:absolute;
+    z-index:100;
+    width:100%;
+
+    /* The following is probably what you want to customize */
+    background:-webkit-gradient(linear, 0 0, 100% 0, from(#7d7e7d), to(#0e0e0e));
+    border:1px solid #7d7e7d;
+    -webkit-background-clip:padding-box;
+    -webkit-box-sizing:border-box;
+    -webkit-border-radius:4px;
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+#spinner
+{
+    display: none;
+    width: 64px;    
+    height: 64px;
+    position: absolute;
+    z-index: 9;
+    left: 300px;
+    top: 300px;
+}
+
+
+/* MyAccount */
+div.pack
+{
+    margin: 20px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%); /* W3C */
+    -webkit-border-radius: 10px; border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.3); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.3); 
+    padding: 10px;    
+}
+
+div.pack h3
+{
+    font-weight: bold;    
+}
+
+div.pack dl
+{
+    width: 250px;
+    height: 60px;  
+}
+
+div.pack dt
+{
+    font-weight: bold;
+    float: left; 
+    width: 125px;
+    margin-top: 5px;   
+}
+
+div.pack dd
+{
+    margin-top: 5px;
+    font-weight: normal;
+    float: left;    
+    width: 125px;
+}
+
+div.pack a.button
+{
+    width: 140px;
+}

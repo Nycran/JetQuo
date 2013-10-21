@@ -1,0 +1,617 @@
+/* resets, basic styles ------------------------------ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/* main layout ------------------------------ */
+
+html 
+{
+    background: #fff; 
+    -webkit-text-size-adjust:none; -ms-text-size-adjust:none; 
+}
+
+body
+{
+    color: #808080;
+    font: 15px/1.5em Futura, "Century Gothic", AppleGothic, sans-serif;
+    padding: 0;
+    min-height: 768px;
+    position: relative;
+    max-width: 1024px;
+}
+
+.wrapper
+{
+    background: url('../images/background.png') top right repeat;
+    margin-bottom: 20px;
+    height: 768px;
+    padding: 0 20px; 
+    max-width: 984px;   
+}
+
+section, aside 
+{
+    display: inline-block;
+    max-height: 660px;
+    vertical-align: top;
+}
+
+section
+{
+    width: 660px;
+}
+
+aside
+{
+    color: #333333;
+    margin-left: 37px;
+    width: 280px;
+}
+
+
+/* footer ------------------------------ */
+footer
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(100%,#272727)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4c4c4c 0%, #272727 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #4c4c4c 0%, #272727 100%); /* W3C */    
+    height: 50px;
+    position: absolute;
+        bottom: 0; left: 0;
+    width: 100%;
+}
+
+footer ul
+{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+footer li
+{
+    float: left;
+    margin: 0 20px;
+}
+
+footer a
+{
+    background: url('../images/footer-icon-new-inspection.png') top center no-repeat;    
+    color: #ccc;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 6px 0 0;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+}
+
+footer li:nth-child(2) a
+{
+    background: url('../images/footer-icon-inspections.png') top center no-repeat;     
+}
+
+footer li:nth-child(3) a
+{
+    background: url('../images/footer-icon-clients.png') top center no-repeat;     
+}
+
+footer li:nth-child(4) a
+{
+    background: url('../images/footer-icon-sites.png') top center no-repeat;     
+}
+
+footer li:nth-child(5) a
+{
+    background: url('../images/footer-icon-sync.png') top center no-repeat;     
+}
+
+footer li a:hover, footer li a.active
+{
+    background-position: center -50px;
+    color: #fff;
+}
+
+
+/* type ------------------------------ */
+
+h1
+{
+    background: url('../images/h1-bk.png') top left no-repeat;    
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 0 20px -20px;
+    padding: 20px 20px 0;
+    width: 984px;
+}
+
+h2, h3, h4, h5, h6
+{
+    color: #00a0b2;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 21px;
+}
+
+aside h3
+{
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a.button
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ec5cc), color-stop(50%,#00a4b5), color-stop(51%,#0094a3), color-stop(100%,#00a0b2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7ec5cc 0%, #00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #7ec5cc 0%, #00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* W3C */
+    border: 1px solid #768b8d;   
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: bold; 
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: #032a2e 0px -1px 0;
+    width: 88px;    
+}
+
+a.button:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a0b2), color-stop(49%,#0094a3), color-stop(50%,#00a4b5), color-stop(100%,#7ec5cc), color-stop(100%,#7ec5cc)); /* Chrome,Safari4+ */    
+    background: -webkit-linear-gradient(top, #00a0b2 0%,#0094a3 49%,#00a4b5 50%,#7ec5cc 100%,#7ec5cc 100%); /* Chrome10+,Safari5.1+ */    
+    background: linear-gradient(top, #00a0b2 0%,#0094a3 49%,#00a4b5 50%,#7ec5cc 100%,#7ec5cc 100%); /* W3C */  
+    text-shadow: #032a2e 0px 0 2px;       
+}
+
+.button.right+.button.right
+{
+    margin-right: 5px;
+}
+
+a.button.alert
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4214b), color-stop(50%,#c3032c), color-stop(51%,#b10328), color-stop(100%,#c3032c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e4214b 0%,#c3032c 50%,#b10328 51%,#c3032c 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #e4214b 0%,#c3032c 50%,#b10328 51%,#c3032c 100%); /* W3C */
+    border: 1px solid #768b8d; 
+}
+
+a.button.alert:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3032c), color-stop(50%,#b10328), color-stop(51%,#c3032c), color-stop(100%,#e4214b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c3032c 0%,#b10328 50%,#c3032c 51%,#e4214b 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #c3032c 0%,#b10328 50%,#c3032c 51%,#e4214b 100%); /* W3C */
+}
+
+/* forms ------------------------------ */
+fieldset
+{
+    border: 0 none;   
+}
+
+label
+{
+    color: #666666;
+}
+
+input[type="text"], input[type="password"]  
+{
+    background: #f7f7f7;
+    border: 1px solid #bbbbbb;   
+    border-radius: 10px;
+    font-size: 16px; 
+    margin: 5px 0 20px;
+    padding: 9px;
+    width: 390px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus
+{
+    border-color: #00a0b2;
+    -webkit-box-shadow: 0px 1px 3px 0px #dedede; box-shadow: 0px 2px 3px 3px #dedede; 
+    outline: none;
+}
+
+input.options
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f7f7f7), color-stop(51%,#edeff3), color-stop(100%,#edeff3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f7f7f7 50%,#edeff3 51%,#edeff3 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #ffffff 0%,#f7f7f7 50%,#edeff3 51%,#edeff3 100%); /* W3C */
+    border: 1px solid #bbbbbb;   
+    border-radius: 10px;
+    font-size: 16px; 
+    margin: 5px 0 20px;
+    padding: 9px;    
+}
+
+input[type="submit"]
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ec5cc), color-stop(0%,#7ec5cc), color-stop(50%,#00a4b5), color-stop(51%,#0094a3), color-stop(100%,#00a0b2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7ec5cc 0%,#7ec5cc 0%,#00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #7ec5cc 0%,#7ec5cc 0%,#00a4b5 50%,#0094a3 51%,#00a0b2 100%); /* W3C */
+    border: 1px solid #768b8d;   
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold; 
+    margin: 5px 0 20px;
+    padding: 9px;
+    text-align: center;
+    text-shadow: #032a2e 0px -1px 0;
+    width: 250px;    
+}
+
+input[type="submit"]:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a0b2), color-stop(49%,#0094a3), color-stop(50%,#00a4b5), color-stop(100%,#7ec5cc), color-stop(100%,#7ec5cc)); /* Chrome,Safari4+ */    
+    background: -webkit-linear-gradient(top, #00a0b2 0%,#0094a3 49%,#00a4b5 50%,#7ec5cc 100%,#7ec5cc 100%); /* Chrome10+,Safari5.1+ */    
+    background: linear-gradient(top, #00a0b2 0%,#0094a3 49%,#00a4b5 50%,#7ec5cc 100%,#7ec5cc 100%); /* W3C */  
+    text-shadow: #032a2e 0px 0 2px;       
+}
+
+aside form, aside fieldset
+{
+    width: 100%;
+}
+
+aside label
+{
+    clear: left;
+    color: #808080;
+    display: block;
+    float: left;
+    margin: 5px 0;    
+    padding: 5px 5px 5px 0;
+    text-align: right;
+    width: 77px;
+}
+
+aside input[type="text"]
+{   
+    display: block;    
+    float: right;
+    margin: 5px 0; 
+    padding: 5px;     
+    width: 185px;
+}
+
+aside textarea
+{
+    clear: both;
+    border: 1px solid #bbbbbb;   
+    border-radius: 10px;
+    font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+    font-size: 15px; 
+    height: 70px;
+    margin: 5px 0 20px;
+    overflow: hidden;
+    padding: 9px;
+    width: 258px;       
+}
+
+/* home page ------------------------------ */
+.wrapper.home
+{
+    background: url('../images/login-bk.jpg') bottom left no-repeat;
+    min-height: 768px;
+    padding: 60px 60px 0; 
+    max-width: 904px;    
+}
+
+.wrapper.home p:first-child
+{
+    padding-top: 30px;
+}
+
+.wrapper.home p
+{
+    width: 620px;
+}
+
+.wrapper.home h1
+{
+    background-image: none;
+    color: #00a0b2;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.wrapper.home #logo
+{
+    position: absolute;
+        top: 60px;
+        right: 60px;
+}
+
+#frmLogin
+{
+    padding-top: 40px;
+    width: 400px;
+}
+
+/* inspection details page ------------------------------ */
+
+.wrapper.inspectionDetails
+{
+    background: url('../images/background-arrow.png') 700px 343px no-repeat, url('../images/background.png') top left repeat-y;    
+}
+
+#frmInspectionDetails
+{
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+#frmInspectionDetails label
+{
+    margin: 0;
+    padding: 5px 5px 0 50px;
+    white-space: nowrap;
+    float: right;
+}
+
+#frmInspectionDetails td:first-child label
+{
+    padding-left: 0;
+}
+
+#frmInspectionDetails input[type="text"]
+{
+    margin: 0 0 10px;
+    width: 160px;
+}
+
+#frmInspectionDetails input[type="text"].long
+{
+    width: 250px;
+}
+
+
+/* tables ------------------------------ */ 
+table.listing
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} 
+
+.listing th
+{
+    background: #bfe7ec;
+    color: #333333;
+    font-weight: bold;
+}
+
+.listing th, .listing td
+{
+    border: 1px solid #808080;
+    color: #4d4d4d;
+    min-height: 30px;
+    padding: 8px 8px 4px;
+    text-align: left;
+} 
+
+.listing tr:nth-child(2n+1) td
+{
+    background: #f7f7f7;
+}
+
+.listing .moreBtn
+{
+    float: right;
+    margin-top: -5px;
+}
+
+.listing .active td, .listing tr:nth-child(2n+1).active td 
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#e4e4e4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f8f8f8 0%, #e4e4e4 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #f8f8f8 0%, #e4e4e4 100%); /* W3C */
+    font-weight: bold;
+}
+
+.active .moreBtn
+{
+    background-position: bottom left;
+}
+
+
+/* buttons ------------------------------ */ 
+a.moreBtn
+{
+    background: url('../images/arrowBtn.png') top left no-repeat; 
+    display: block;
+        height: 28px; width: 29px; 
+    text-decoration: none;      
+}
+
+a.moreBtn:hover
+{
+    background-position: bottom left;
+}
+
+/* lists ------------------------------ */ 
+
+ul.gallery
+{
+    height: 60px;
+    list-style: none;
+    margin: 0 0 20px;
+    overflow: hidden;
+    padding: 0;
+    width: 280px;
+}
+
+.gallery li
+{
+    float: left;
+    margin-left: 5px;
+}
+
+.gallery li:nth-child(3n+1)
+{
+    margin-left: 0;
+}
+
+aside ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li
+{
+    background: url('../images/divider.png') bottom left repeat-x;   
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+/* misc ------------------------------ */ 
+
+.right
+{
+    float: right;
+}
+
+.IB
+{
+    display: inline-block;
+}
+
+h2.IB
+{
+    padding-top: 5px;
+}
+
+aside h3.IB
+{
+    margin-top: 3px;
+}
+
+ul.gallery
+{
+    clear: left;
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
+
+.gallery li
+{
+    display: inline-block; vertical-align: top; *display: inline; zoom: 1;
+    height: 70px;
+    margin: 0 0 10px 5px;
+    overflow-y: hidden;
+    padding: 0;
+    width: 90px;
+}
+
+.gallery li.first
+{
+    margin-left: 0;
+}
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../images/overlay.png) repeat 0 0;}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -100px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -129px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -100px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -129px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(../images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious.hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext.hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(../images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose.hover{background-position:-25px -25px;}
+
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }

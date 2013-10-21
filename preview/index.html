@@ -1,0 +1,371 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS: implied media="all" -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(
+        function() {
+
+            $("a[rel='gallery1']").colorbox();
+
+        }
+        ); 
+    </script>  
+</head>
+
+<body>
+
+    <!-- login screen -->
+    <div class="wrapper home">
+        <p>Welcome to The Planet Earth inspection application. In order to use this application please log in below. If you do not have a login or if you are having trouble logging in, contact the office on 1300 669 441.</p>
+        <a href="http://www.theplanetearth.com.au/"><img id="logo" src="images/logo.png" width="200" height="150" alt="Visit the Planet Earth website." /></a>
+
+        <form action="#" method="post" id="frmLogin">
+            <h1>login</h1>
+            <fieldset>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" value="" class="required" />             
+
+                <label for="pword">password</label>
+                <input type="password" name="pword" id="pword" value="" class="required" />        
+
+                <input type="submit" class="submit" value="login"/>  
+            </fieldset> 
+        </form>
+    </div> <!--! end of login screen wrapper -->
+
+    <!-- inspection details screen -->    
+    <div class="wrapper inspectionDetails" style="display: block;">
+        <h1>Inspection Details</h1>
+        <section>
+            <form action=" " method="post" id="frmInspectionDetails">
+                <fieldset>
+                    <table class="plain">
+                        <tr>
+                            <td>
+                                <label for="inspectionDate">date</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionDate" id="inspectionDate" value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionClient">client</label>
+
+                            </td>
+                            <td>
+                                <input class="long options" type="text" name="inspectionClient" id="inspectionClient" value="" />  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="inspectionStart">start time</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionStart" id="inspectionStart" value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionSite">site</label>
+
+                            </td>
+                            <td>
+                                <input class="long options" type="text" name="inspectionSite" id="inspectionSite" value="" />  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="inspectionFinish">finish time</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionFinish" id="inspectionFinish"  value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionInspector">inspector</label>
+
+                            </td>
+                            <td>
+                                <input class="long" type="text" name="inspectionInspector" id="inspectionInspector" value="" />  
+                            </td>
+                        </tr>                                                
+                    </table>
+                </fieldset>
+            </form>
+
+            <h2 class="IB">Defect List</h2>
+            <a class="button right" href="#">Add Defect</a>
+
+            <table class="listing">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Area</th>
+                        <th>Issue</th>
+                        <th>Detail</th>                                                          
+                    </tr>                
+                </thead>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr class="active">
+                    <td>22</td>
+                    <td>Library</td> 
+                    <td>Doors</td>    
+                    <td>Exterior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>                                                                                
+            </table>
+        </section>
+        <aside>
+            <form action=" " method="post" id="frmDefectDetails">
+                <h3 class="IB">Defect Details</h3>
+                <a class="button alert right" href="#">Delete Defect</a>
+                <fieldset>
+                    <label for="level">level</label>
+                    <input type="text" name="level" id="level" value="" />             
+
+                    <label for="area">area</label>
+                    <input type="text" name="area" id="area" value="" />   
+                    
+                    <label for="issue">issue</label>
+                    <input type="text" name="issue" id="issue" value="" />   
+                    
+                    <label for="detail">detail</label>
+                    <input type="text" name="detail" id="detail" value="" />  
+                    
+                    <textarea>Detailed description here. Smears on the lower part of the interior door. Text text text. Smears on the lower part of the interior door.
+                    </textarea>                                               
+                </fieldset> 
+            </form> 
+            
+            <h3 class="IB">Photos</h3>  
+            <a class="button right" href="#">Pick</a>
+            <a class="button right" href="#">Capture</a>   
+            <ul class="gallery">
+                <li><a href="images/gallery/temp1.jpg" rel="gallery1"><img src="images/gallery/tmb-temp1.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp2.jpg" rel="gallery1"><img src="images/gallery/tmb-temp2.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp3.jpg" rel="gallery1"><img src="images/gallery/tmb-temp3.jpg" width="90" height="60" alt="gall1" /></a></li> 
+                <li><a href="images/gallery/temp1.jpg" rel="gallery1"><img src="images/gallery/tmb-temp1.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp2.jpg" rel="gallery1"><img src="images/gallery/tmb-temp2.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp3.jpg" rel="gallery1"><img src="images/gallery/tmb-temp3.jpg" width="90" height="60" alt="gall1" /></a></li>                                
+            </ul> 
+            
+            <h3>History</h3>  
+            <ul>
+                <li>14/06/11 &ndash; Smears on the upper part of the interior door.</li>
+                <li>05/05/11 &ndash; Flaking paint. Longer defect description here.</li>
+                <li>25/04/11 &ndash; Smears on the lower part of the door.</li>
+            </ul>   
+        </aside>
+
+        <footer>
+            <ul>
+                <li><a href="#">New Inspection</a></li>
+                <li><a class="active" href="#">Inspections</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Sync</a></li>
+            </ul>
+        </footer>
+    </div> <!--! end of inspection details screen wrapper --> 
+    
+    <!-- inspection listing screen -->    
+    <div class="wrapper inspectionListing" style="display: block;">
+        <h1>Inspection Listing</h1>
+        <section>
+            <form action=" " method="post" id="frmInspectionDetails">
+                <fieldset>
+                    <table class="plain">
+                        <tr>
+                            <td>
+                                <label for="inspectionDate">date</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionDate" id="inspectionDate" value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionClient">client</label>
+
+                            </td>
+                            <td>
+                                <input class="long options" type="text" name="inspectionClient" id="inspectionClient" value="" />  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="inspectionStart">start time</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionStart" id="inspectionStart" value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionSite">site</label>
+
+                            </td>
+                            <td>
+                                <input class="long options" type="text" name="inspectionSite" id="inspectionSite" value="" />  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="inspectionFinish">finish time</label>
+                            </td>
+                            <td>
+                                <input type="text" name="inspectionFinish" id="inspectionFinish"  value="" />     
+                            </td>
+                            <td>
+                                <label for="inspectionInspector">inspector</label>
+
+                            </td>
+                            <td>
+                                <input class="long" type="text" name="inspectionInspector" id="inspectionInspector" value="" />  
+                            </td>
+                        </tr>                                                
+                    </table>
+                </fieldset>
+            </form>
+
+            <h2 class="IB">Defect List</h2>
+            <a class="button right" href="#">Add Defect</a>
+
+            <table class="listing">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Area</th>
+                        <th>Issue</th>
+                        <th>Detail</th>                                                          
+                    </tr>                
+                </thead>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr class="active">
+                    <td>22</td>
+                    <td>Library</td> 
+                    <td>Doors</td>    
+                    <td>Exterior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wash-M</td> 
+                    <td>Doors</td>    
+                    <td>Interior <a class="moreBtn" href="#"></a></td>        
+                </tr>                                                                                
+            </table>
+        </section>
+        <aside>
+            <form action=" " method="post" id="frmDefectDetails">
+                <h3 class="IB">Defect Details</h3>
+                <a class="button alert right" href="#">Delete Defect</a>
+                <fieldset>
+                    <label for="level">level</label>
+                    <input type="text" name="level" id="level" value="" />             
+
+                    <label for="area">area</label>
+                    <input type="text" name="area" id="area" value="" />   
+                    
+                    <label for="issue">issue</label>
+                    <input type="text" name="issue" id="issue" value="" />   
+                    
+                    <label for="detail">detail</label>
+                    <input type="text" name="detail" id="detail" value="" />  
+                    
+                    <textarea>Detailed description here. Smears on the lower part of the interior door. Text text text. Smears on the lower part of the interior door.
+                    </textarea>                                               
+                </fieldset> 
+            </form> 
+            
+            <h3 class="IB">Photos</h3>  
+            <a class="button right" href="#">Pick</a>
+            <a class="button right" href="#">Capture</a>   
+            <ul class="gallery">
+                <li><a href="images/gallery/temp1.jpg" rel="gallery1"><img src="images/gallery/tmb-temp1.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp2.jpg" rel="gallery1"><img src="images/gallery/tmb-temp2.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp3.jpg" rel="gallery1"><img src="images/gallery/tmb-temp3.jpg" width="90" height="60" alt="gall1" /></a></li> 
+                <li><a href="images/gallery/temp1.jpg" rel="gallery1"><img src="images/gallery/tmb-temp1.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp2.jpg" rel="gallery1"><img src="images/gallery/tmb-temp2.jpg" width="90" height="60" alt="gall1" /></a></li>
+                <li><a href="images/gallery/temp3.jpg" rel="gallery1"><img src="images/gallery/tmb-temp3.jpg" width="90" height="60" alt="gall1" /></a></li>                                
+            </ul> 
+            
+            <h3>History</h3>  
+            <ul>
+                <li>14/06/11 &ndash; Smears on the upper part of the interior door.</li>
+                <li>05/05/11 &ndash; Flaking paint. Longer defect description here.</li>
+                <li>25/04/11 &ndash; Smears on the lower part of the door.</li>
+            </ul>   
+        </aside>
+
+        <footer>
+            <ul>
+                <li><a href="#">New Inspection</a></li>
+                <li><a class="active" href="#">Inspections</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Sync</a></li>
+            </ul>
+        </footer>
+    </div> <!--! end of inspection details screen wrapper -->          
+
+</body>
+</html>
