@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id = "com.jetquo.inspections"
+        id = "com.jetquo.JetquoInspect"
         version = "2.0.0">
     <name>JetQuo Inspect</name>
 
@@ -23,11 +23,10 @@
     
     <gap:plugin name="ChildBrowser" />
 
-    <icon src="icon.png" />
-    <icon src="launcher72.png" gap:platform="ios" width="72" height="72" />
-    <icon src="launcher144.png" gap:platform="ios" width="144" height="144" />
-    
+    <icon src="launcher72.png" />
     <!--
+    <icon src="launcher72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="launcher144.png" gap:platform="ios" width="144" height="144" />    
     <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
     <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
